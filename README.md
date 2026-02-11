@@ -94,6 +94,20 @@ You will build a **preventive organizational guardrail** that:
 
 ---
 
+## Project Phases
+
+### Phase 1 - Organization bootstrap
+
+Creates the AWS Organization and an OU (`dsb-labs`). Optionally creates a sandbox member account.
+
+Path: `terraform/01-org-bootstrap`
+
+### Phase 2 - IMDSv2 preventive SCP
+
+Creates and attaches an SCP that denies EC2 actions unless IMDSv2 is required. Attach it to the OU or root.
+
+Path: `terraform/02-imdsv2-scp`
+
 ## Core Concepts (Quick Primer)
 
 ### AWS Organizations

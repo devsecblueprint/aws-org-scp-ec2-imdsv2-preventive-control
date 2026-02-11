@@ -35,3 +35,10 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# OS / Editor noise
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
