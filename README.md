@@ -149,7 +149,7 @@ Organization-level guardrails that:
 
 ## Architecture (High-Level)
 
-![AWS Organizations SCP – IMDSv2 Enforcement Scope](docs/diagrams/aws-org-scp-imdsv2-architecture.png)
+![AWS Organizations SCP – IMDSv2 Enforcement Scope](docs/diagrams/aws-org-scp-imdsv2-architecture.png.png)
 
 **Scope of enforcement:**  
 The SCP is attached to an Organizational Unit (OU).  
