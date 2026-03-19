@@ -1,3 +1,9 @@
+variable "create_organization" {
+  type        = bool
+  description = "Whether to create a new AWS Organization. Set to false if your account is already in an org."
+  default     = false # Set to false if you have already created an organizational unit
+}
+
 variable "ou_name" {
   type        = string
   description = "Name of the Organizational Unit (OU) to create for labs."
@@ -11,7 +17,7 @@ variable "ou_name" {
 variable "create_sandbox_account" {
   type        = bool
   description = "Whether to create a sandbox member account inside the Organization for safe testing."
-  default     = false
+  default     = true
 }
 
 variable "sandbox_account_name" {
@@ -28,7 +34,7 @@ variable "sandbox_account_name" {
 variable "sandbox_account_email" {
   type        = string
   description = "Unique email address for the sandbox AWS account (required if create_sandbox_account=true)."
-  default     = ""
+  default     = "burner@devsecblueprint.com"
 }
 variable "sandbox_account_role_name" {
   type        = string

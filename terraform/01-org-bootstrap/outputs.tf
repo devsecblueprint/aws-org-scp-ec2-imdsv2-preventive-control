@@ -1,11 +1,11 @@
 output "organization_id" {
   description = "AWS Organization ID."
-  value       = aws_organizations_organization.this.id
+  value       = local.org_id
 }
 
 output "root_id" {
   description = "Organization Root ID."
-  value       = aws_organizations_organization.this.roots[0].id
+  value       = local.org_root_id
 }
 
 output "ou_id" {
