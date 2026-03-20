@@ -34,7 +34,7 @@ variable "sandbox_account_name" {
 variable "sandbox_account_email" {
   type        = string
   description = "Unique email address for the sandbox AWS account (required if create_sandbox_account=true)."
-  default     = "burner@devsecblueprint.com"
+  default     = "test@test.com"
 }
 variable "sandbox_account_role_name" {
   type        = string
